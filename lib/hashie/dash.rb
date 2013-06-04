@@ -11,11 +11,19 @@ module Hashie
         end
         @options[name] = v
       end
+      define_method "[]=" do |k, v|
+        if @options[:required] && v.nil?
+          raise ArgumentError
+        end
+        @options[k] = v
+      end
+
+
       define_method name do
         @options[name]
       end
-      define_method '[]' do |v|
-        @options[v]
+      define_method "[]" do |k|
+        @options[k]
       end
     end
   end
