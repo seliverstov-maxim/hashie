@@ -2,7 +2,7 @@ require "bundler/setup"
 Bundler.require
 
 require 'coveralls'
-Coveralls.wear!('rails')
+Coveralls.wear!
 
 MiniTest::Unit.autorun
 
