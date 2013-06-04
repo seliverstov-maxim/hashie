@@ -5,4 +5,5 @@ module Hashie
   end
 
   autoload :Mash, 'hashie/mash'
+  autoload :Dash, 'hashie/dash'
 end
