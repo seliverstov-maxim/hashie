@@ -1,4 +1,4 @@
-class Person < Hashie::Dash
+class PersonDash < Hashie::Dash
   property :name, required: true, default: "Name"
   property :email
   property :occupation, default: 'Rubyist'

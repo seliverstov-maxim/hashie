@@ -2,7 +2,7 @@ require "test_helper"
 
 class DashTest < TestCase
   def setup
-    @dash = Person.new(name: "Name")
+    @dash = PersonDash.new(name: "Name")
   end
 
   def test_should_get_property
@@ -22,7 +22,7 @@ class DashTest < TestCase
 
   def test_dash_argument_error
     assert_raises ArgumentError do
-      dash = Person.new
+      dash = PersonDash.new
     end
   end
 end
