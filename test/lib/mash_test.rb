@@ -18,4 +18,8 @@ class MashTest < TestCase
     assert_equal "test", @mash.name
     assert @mash.name?
   end
+
+  def test_mash_respond_to_missing
+    assert @mash.respond_to? :name
+  end
 end
