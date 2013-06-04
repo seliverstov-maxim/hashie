@@ -5,8 +5,8 @@ module Hashie
       super
     end
 
-    def respond_to_missing?()
-
+    def respond_to_missing?(method_name, include_private = false)
+      true
     end
 
     def method_missing(m, *args, &block)
