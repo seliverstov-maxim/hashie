@@ -5,7 +5,7 @@ gemspec
 
 gem "tconsole"
 gem "simplecov"
-gem "coveralls"
+gem "coveralls", require: false
 gem "minitest", "~> 5.0.3"
 
 group :test do
