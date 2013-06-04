@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gemspec
 
 gem "turn"
-gem "minitest"
+gem "minitest", "~> 5.0.3"
 gem "tconsole"
 gem "simplecov"
 gem "coveralls"
