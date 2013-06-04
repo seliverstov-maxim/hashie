@@ -1,5 +1,9 @@
 require "hashie/version"
 
 module Hashie
-  # Your code goes here...
+  class Mash
+    def initialize
+
+    end
+  end
 end

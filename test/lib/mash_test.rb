@@ -1,11 +1,11 @@
 require "test_helper"
 
-class HashieTest < TestCase
+class MashTest < TestCase
   def setup
-    @mash = Mash.new
+    @mash = Hashie::Mash.new
   end
 
   def test_deep_merge
-    assert 
+    assert true
   end
 end

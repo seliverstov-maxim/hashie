@@ -6,10 +6,9 @@ gemspec
 gem "tconsole"
 gem "simplecov"
 gem "coveralls"
+gem "minitest", "~> 5.0.3"
 
 group :test do
   gem 'rake'
-  gem "minitest", "~> 5.0.3"
-  gem ''
 end
 
