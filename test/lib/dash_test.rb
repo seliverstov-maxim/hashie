@@ -20,7 +20,9 @@ class DashTest < TestCase
     assert_equal "example name", @dash[:name]
   end
 
-  def test_dash_should_return_property
-
+  def test_dash_argument_error
+    assert_raises ArgumentError do
+      dash = Person.new
+    end
   end
 end
